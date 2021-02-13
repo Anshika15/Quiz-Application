@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz Application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+   <div id = "q"></div>
+    <h1 class = "quiz-heading" >Quiz</h1>
+
+    <div class="app-body">
+    <h1 class="answer-key">Answer Key</h1>
+
+    <div class="question-card">
+
+        <h3><div id="question"></div></h3>
+         <form >
+                <input type="radio" id="op1" name="op" value="0">
+                <label for="op1">op1</label>
+
+                <br>
+
+                <input type="radio" id="op2" name="op" value="1">
+                <label for="op2">op2</label>
+
+                <br>
+
+                <input type="radio" id="op3" name="op" value="2">
+                <label for="op3">op3</label>
+                
+                <br>
+
+                <input type="radio" id="op4" name="op" value="3">
+                <label for="op4">op4</label>
+                
+                <br>
+
+                <div class="alert alert-success" style="display: none;" id="suc">
+                <strong>Success!</strong>
+                </div>
+                <div class="alert alert-danger" style="display: none;" id="inc">
+                <strong>Incorrect</strong>
+                </div>
+                
+                <br>
+
+                <input type="submit" name="submit" value = 'Submit' class = "submit btn btn-warning"/>
+                 
+        </form>
+        
+    </div>
+
+    <button class="btn btn-primary">Restart</button>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
